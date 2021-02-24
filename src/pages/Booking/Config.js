@@ -41,7 +41,9 @@ export const BookingColumns = [
     title: "Title",
     dataIndex: "Title",
     render: (item) => (
-      <Link to={`/bookingdetalis/${item.id}`}>{item.title}</Link>
+      <Link to={`/booking`}>{item.title}</Link>
+
+      // <Link to={`/bookingdetalis/${item.id}`}>{item.title}</Link>
     ),
     sorter: {
       compare: (a, b) => a.english - b.english,
